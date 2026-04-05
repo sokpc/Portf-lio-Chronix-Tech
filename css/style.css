@@ -1,0 +1,300 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Azul bem escuro */
+    color: #f8fafc;
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #1e293b;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #38bdf8;
+}
+
+/* Seção Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Botões */
+.btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+}
+
+.btn-secondary {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+/* 2. ESTILOS DAS OUTRAS PÁGINAS (O QUE VOCÊ JÁ TINHA) */
+
+.container {
+    padding: 80px 10%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sobre-sessao h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.sobre-sessao p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #334155;
+    color: #38bdf8;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 1px solid #38bdf8;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-header h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #334155;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    background: #334155;
+    height: 180px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.tags {
+    margin-bottom: 20px;
+}
+
+.tags span {
+    font-size: 0.7rem;
+    background: #0f172a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #38bdf8;
+}
+
+.btn-card {
+    display: inline-block;
+    padding: 8px 15px;
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.btn-card:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.contato-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contato-info h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.contato-links {
+    margin-top: 30px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #22c55e;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-whatsapp:hover {
+    background: #16a34a;
+}
+
+.contato-form {
+    flex: 1;
+    min-width: 300px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cbd5e1;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #38bdf8;
+}
